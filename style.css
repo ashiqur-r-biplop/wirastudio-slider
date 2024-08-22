@@ -114,10 +114,45 @@
     height: 10px;
     background-color: #35012c8f;
     cursor: pointer;
+    transition: all .3s ease-in-out;
 }
 
 .indicators .active {
     width: 40px;
     height: 10px;
     background-color: #35012cc7;
+    transition: all .3s ease-in-out;
+}
+
+@media screen and (max-width: 550px) {
+    .slider {
+        min-width: 95%;
+        height: 100%;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        background-color: #35012C;
+        color: white;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .profile-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .profile h2 {
+        font-size: 18px;
+    }
+
+    .profile p {
+        font-size: 12px;
+    }
 }
