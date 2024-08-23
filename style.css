@@ -129,9 +129,13 @@
 }
 
 @media screen and (max-width: 550px) {
+
     /* .slider-container {
         height: 100%;
     } */
+    .sliders {
+        justify-content: center;
+    }
 
     .slider {
         min-width: 95%;
