@@ -37,6 +37,8 @@
     color: white;
     position: relative;
     overflow: hidden;
+    transition: all .3s ease-in-out;
+
 }
 
 .slider::after {
@@ -125,6 +127,10 @@
 }
 
 @media screen and (max-width: 550px) {
+    /* .slider-container {
+        height: 100%;
+    } */
+
     .slider {
         min-width: 95%;
         height: 100%;
