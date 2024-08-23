@@ -32,11 +32,9 @@ document.addEventListener("DOMContentLoaded", function () {
       sliderContainer.style.transform = `translateX(-${
         (currentIndex + 1) * (100 / slidesToShow) + 3
       }%)`;
-    } else {
-      sliderContainer.style.transform = `translateX(-${
+    } sliderContainer.style.transform = `translateX(-${
         (currentIndex + 1) * (100 / slidesToShow)
       }%)`;
-    }
   };
 
   const startAutoSlide = () => {
