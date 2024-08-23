@@ -24,6 +24,7 @@
     height: 360px;
     gap: 20px;
     position: relative;
+    transition: transform 0.3s ease-in-out;
 }
 
 .slider {
