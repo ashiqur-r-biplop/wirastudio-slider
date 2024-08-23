@@ -15,10 +15,22 @@ document.addEventListener("DOMContentLoaded", function () {
   const updateSliderPosition = () => {
     const screenWidth = window.innerWidth;
     const slidesToShow = screenWidth <= 550 ? 1 : 3; // Show 1 slide on mobile, 3 on larger screens
-    if (slidesToShow) {
+    if (slidesToShow && currentIndex <= 5) {
       console.log((currentIndex + 1) * (100 / slidesToShow));
       sliderContainer.style.transform = `translateX(-${
         (currentIndex + 1) * (100 / slidesToShow) - 2
+      }%)`;
+    } else if (slidesToShow && currentIndex >= 6 && currentIndex <= 11) {
+      sliderContainer.style.transform = `translateX(-${
+        (currentIndex + 1) * (100 / slidesToShow) - 1
+      }%)`;
+    } else if (slidesToShow && currentIndex >= 12 && currentIndex <= 17) {
+      sliderContainer.style.transform = `translateX(-${
+        (currentIndex + 1) * (100 / slidesToShow) + 2
+      }%)`;
+    } else if (slidesToShow && currentIndex >= 18 && currentIndex <= 22) {
+      sliderContainer.style.transform = `translateX(-${
+        (currentIndex + 1) * (100 / slidesToShow) + 3
       }%)`;
     } else {
       sliderContainer.style.transform = `translateX(-${
